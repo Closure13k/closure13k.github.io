@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE html>
 <html>
 <!--TODO: hacer web personal.-->
@@ -8,4 +10,87 @@
 </body>
 
 
+</html>
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure13k.github.io</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #FF6F61, #A9DFBF); /* Gradiente de rosa a verde */
+            color: #333; /* Color de texto principal */
+            font-family: 'Arial', sans-serif; /* Tipo de letra principal */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #content {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco del contenido principal */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="card">
+        <h3>Hola, soy Manolo</h3>
+        <p>Un contacto aleatorio y un mensaje inspirador.</p>
+    </div>
+
+    <div id="content">
+        <h1>closure13k.github.io</h1>
+
+        <h4>Posteriormente esto será convertido en sitio web. El contenido se moverá a <a href="https://closure13k.github.io/">este sitio web</a>.</h4>
+
+        <hr>
+
+        <h2>Inicio de investigaciones (sin script)</h2>
+
+        <p>Crear carpeta con nombre, fecha y hora</p>
+        <pre>
+        echo "Nombre para el archivo: " && read nombreArchivo && mkdir ~/Downloads/$nombreArchivo-$(date +%Y%m%d_%H%M%S)
+        </pre>
+
+        <p>Crear carpeta con nombre, fecha y hora y cambiar a ella</p>
+        <pre>
+        echo "Nombre para el archivo: " && read nombreArchivo && combinedValue="$nombreArchivo-$(date +%Y%m%d_%H%M%S)" && mkdir -p ~/Downloads/"$combinedValue" && cd ~/Downloads/$combinedValue
+        </pre>
+
+        <hr>
+
+        <h2>Metagoofil</h2>
+
+        <p>Para una descarga simple de n archivos de un dominio:</p>
+        <pre>
+        metagoofil.py -d [dominio] -t [tipos] -n [numero_archivos] -o [directorio_descarga] -w
+        </pre>
+
+        <h2>Exiftool</h2>
+
+        <pre>
+        exiftool [-csv -csvDelim ":"] -Creator -Producer -Author [Ruta_Archivo] &gt; [Archivo generado] [| cat]
+        </pre>
+    </div>
+</div>
+
+</body>
 </html>

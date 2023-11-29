@@ -30,9 +30,7 @@ metagoofil.py -d [dominio] -t [tipos] -n [numero_archivos] -o [directorio_descar
 ```
 
 ## Exiftool
-<br>
 
-<br>
 ```bash
 exiftool [-csv -csvDelim ":"] -Creator -Producer -Author [Ruta_Archivo] > [Archivo generado] [| cat]
 ```

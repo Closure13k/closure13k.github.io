@@ -26,5 +26,13 @@ Para una descarga simple de n archivos de un dominio:
 <br>
 
 ```bash
-metagoofil.py -d <dominio> -t <tipo_archivo> -n 100 -o <directorio_descarga> -w
+metagoofil.py -d [dominio] -t [tipos] -n [numero_archivos] -o [directorio_descarga] -w
+```
+
+## Exiftool
+<br>
+
+<br>
+```bash
+exiftool [-csv -csvDelim ":"] -Creator -Producer -Author [Ruta_Archivo] > [Archivo generado] [| cat]
 ```
